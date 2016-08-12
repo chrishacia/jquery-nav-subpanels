@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>something</title>
+        <link rel="stylesheet" type="text/css" href="jquery-nav-subpanel.css" />
+    </head>
+<body>
+
+<!--
+@data-subpanel=
+is the identifier of the content for the sub-panel we want to load
+-->
+<ul class="nav-parent group">
+    <li class="nav-point" data-subpanel="1">
+        <!-- Menu Item -->
+        Who
+    </li>
+    <li class="nav-point" data-subpanel="2">
+        <!-- Menu Item -->
+        What
+    </li>
+</ul>
+
+
+<!--
+    leave this outside of your menus this is a loading panel
+    it will position itself via javascript to the bottom of
+    .nav-parent automatically which is the parent container of your UL based nav
+    it will also attempt to match the width/length of the container rather than
+    span the whole windows width
+-->
+<div class="sub-panel"></div>
+
+<!--
+    for nav points you want to have a drop down menu for ie: data-subpanel
+    the below .sub-panel-content are the containers that will be loaded into the sub-panel
+    it reads the html() of the spc-* container. So HTML is allowed
+-->
+<div class="sub-panel-content spc-1">
+    <ul class="sub-panel-list-group">
+
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-1 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-2 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-3 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-4 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-5 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-6 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-7 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-8 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-9 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-10 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-11 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-12 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-13 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-14 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-15 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-16 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-17 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-18 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-19 ignore-href">Click</a>
+        </li>
+        <li class="sub-panel-list-group-item">
+            <a href="" class="sub-panel-group-item-segment segment-slider-20 ignore-href">Click</a>
+        </li>
+
+    </ul>
+</div>
+
+<div class="sub-panel-content spc-2">
+    <!-- Whatever slider you have html here -->
+</div>
+
+
+<div class="sub-panel-content-slider slider-1">
+    <!-- EMPTY PANEL -->
+    Blank, Empty... Slider
+</div>
+
+<script src="//jmequipm.nextmp.net/js/lib/jquery/jquery-1.10.2.min.js"></script>
+<script src="jquery-nav-subpanel.js"></script>
+</body>
+</html>

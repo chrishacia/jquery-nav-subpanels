@@ -1,0 +1,54 @@
+.nav-parent{
+    background:#000; color:#FFF;
+    border-bottom: 1px solid #0F0;
+}
+
+/* semanticly named clearfix to group */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.nav-point{
+    float:left;
+    width: 100px;
+}
+
+.sub-panel{
+    display:none;
+    position:absolute;
+    left:0;
+    right:0;
+    background-color:#ccc;
+}
+
+.sub-panel-content, .sub-panel-content-slider{
+    display:none;
+}
+
+.sub-panel-list-group{
+    list-style:none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width:700px;
+}
+
+.sub-panel-list-group-item{
+    width:140px;
+    height:140px;
+    float:left;
+}
